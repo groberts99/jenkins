@@ -50,7 +50,7 @@ spec:
           }
           sh '''
             hostname
-            cat /etc/redhat-release
+            ls /etc
           '''
         }
       }

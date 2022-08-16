@@ -36,7 +36,7 @@ spec:
                input(message: 'Hello World!', ok: 'Submit')
                sh '''
                  hostname
-                 cat /opt
+                 ls /opt
                  '''
             }
         }

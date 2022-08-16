@@ -34,10 +34,15 @@ spec:
         stage('input') {
             steps {
                input(message: 'Hello World!', ok: 'Submit')
-               sh '''
-                 hostname
-                 ls /opt
-                 '''
+            }
+        }
+        stage('all done') {
+        agent any
+            steps {
+              sh '''
+                hostname
+                ls /opt
+              '''
             }
         }
     }
